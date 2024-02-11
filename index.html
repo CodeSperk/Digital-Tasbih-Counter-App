@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Tasbih</title>
+  <!-- tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .gradient-clr{
+      background: linear-gradient(to right, #7429C6, #C951E7, #672171);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color:transparent; 
+    }
+  </style>
+
+</head>
+
+<body>
+  <section class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 min-h-svh flex justify-center items-center">
+    <div id="tasbih" class="max-w-7xl mx-auto text-white p-6 md:p-12 lg:p-16 text-center mb-16 mt-16">
+      <h2 class="text-4xl md:text-6xl uppercase">Digital Tasbih</h2>
+
+      <div class="cards mt-12 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-center items-center content-center   gap-8">
+        <!-- Card-1 -->
+        <div id="subhan-Allah" class="bg-[#030616] p-12 shadow-white rounded-lg">
+          <h3 class="gradient-clr text-3xl uppercase">Subhan Allah</h3>
+          <p class="text-3xl mb-8 mt-2">0</p>
+          <div id="btns" class="flex gap-6 justify-center items-center">
+            
+            <div id="dec1-btn" class="inc-btn bg-purple-500 rounded-md px-6 py-3 text-lg uppercase hover:bg-purple-800 cursor-pointer"> Decriment
+  
+            </div>
+            <div id="inc1-btn" class="inc-btn bg-purple-600 rounded-md px-6 py-3 text-lg uppercase hover:bg-purple-800 cursor-pointer"> Incriment
+  
+            </div>
+          </div>
+        </div>
+
+        <!-- Card-2 -->
+        <div id="alhamdu" class="bg-[#030616] p-12 shadow-white rounded-lg">
+          <h3 class="gradient-clr text-3xl uppercase">Alhamdulillah</h3>
+          <p class="text-3xl mb-8 mt-2">0</p>
+          <div id="btns" class="flex gap-6 justify-center items-center">
+           
+            <div id="dec2-btn" class="inc-btn bg-purple-500 rounded-md px-6 py-3 text-lg uppercase hover:bg-purple-800 cursor-pointer"> Decriment
+  
+            </div>
+            <div id="inc2-btn" class="inc-btn bg-purple-600 rounded-md px-6 py-3 text-lg uppercase hover:bg-purple-800 cursor-pointer"> Incriment
+  
+            </div>
+          </div>
+        </div>
+
+        <!-- Card-3 -->
+        <div id="AllahuAkbar" class="bg-[#030616] p-12 shadow-white rounded-lg">
+          <h3 class="gradient-clr text-3xl uppercase">Allahu Akbar</h3>
+          <p class="text-3xl mb-8 mt-2">0</p>
+          <div id="btns" class="flex gap-6 justify-center items-center">
+            
+            <div id="dec3-btn" class="inc-btn bg-purple-500 rounded-md px-6 py-3 text-lg uppercase hover:bg-purple-800 cursor-pointer"> Decriment
+  
+            </div>
+            <div id="inc3-btn" class="inc-btn bg-purple-600 rounded-md px-6 py-3 text-lg uppercase hover:bg-purple-800 cursor-pointer"> Incriment
+  
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div id="reset-btn" class="bg-purple-700 w-fit mx-auto py-4 px-8 rounded-lg shadow-xl mt-16 cursor-pointer hover:bg-purple-500 hover:text-gray-800 text-xl">Reset All Tasbih</div>
+    </div>
+  </section>
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
